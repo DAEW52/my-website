@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Hamabi Kimoji</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์ส่งรูปออนไลน์</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ส่งรูปออนไลน์</h1>
+        <form id="uploadForm">
+            <label for="socialName">ชื่อโชลเชียล:</label>
+            <input type="text" id="socialName" name="socialName" required>
+
+            <label for="tableNumber">เลขโต๊ะ:</label>
+            <input type="number" id="tableNumber" name="tableNumber" required>
+
+            <label for="caption">แค็ปชั่น:</label>
+            <textarea id="caption" name="caption" rows="4" required></textarea>
+
+            <label for="image">เลือกรูป:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">ส่งข้อมูล</button>
+        </form>
+
+        <div id="previewContainer">
+            <h2>ตัวอย่างการแสดงผล:</h2>
+            <p id="socialPreview"></p>
+            <p id="tablePreview"></p>
+            <p id="captionPreview"></p>
+            <img id="imagePreview" src="" alt="รูปภาพที่อัพโหลด" style="max-width: 100%; display: none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
